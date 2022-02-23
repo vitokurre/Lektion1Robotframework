@@ -1,23 +1,30 @@
 *** Settings ***
 Documentation  Some basic information abouth the whole test suite
+Resource  ../Resources/keywords.robot
 Library  SeleniumLibrary
+Suite Setup  Begin Web Test
+Suite Teardown  End Web Test
 
-*** Keywords ***
-
-
+*** Variables ***
+${BROWSER}  chrome
+${URL}  https://www.mediamarkt.se
 
 *** Test Cases ***
 User Can Acess Website And Search For Product
        [Documentation]  This is some basic informtation about the test
        [Tags]  Test 1
-       # Begin Web Test
-       Open Browser  about:blank  chrome
+       Go To Web Page
 
-       Maximize Browser Window
-       Go To  https://www.mediamarkt.se
-       Wait Until Page Contains  Om MediaMarkt
-       Input Text  //*[@id="search-autocomplete"]/form/input[1]  Game & Watch: The Legend of Zelda
-       Press Keys  //*[@id="search-autocomplete"]/form/input[1]  RETURN
-       Wait Until Page Contains  Game & Watch: The Legend of Zelda
-       Close Browser
+
+User Can Search For A Product
+       [Documentation]  This is some basic informtation about the test
+       [Tags]  Test 2
+       Go To Web Page
+       Search For Product  Game & Watch: The Legend of Zelda  Game & Watch: The Legend of Zelda
+
+User Can Search For A Product
+       [Documentation]  This is some basic informtation about the test
+       [Tags]  Test 3
+       Go To Web Page
+       Search For Product  NINTENDO Switch 2019 - Grå  NINTENDO Switch 2019 - Grå
 
