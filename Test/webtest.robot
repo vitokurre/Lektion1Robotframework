@@ -18,14 +18,21 @@ User Can Acess Website And Search For Product
 
 
 User Can Search For A Product
-       [Documentation]  This is some basic informtation about the test
-       [Tags]  Test 2
-       Go To Web Page
-       Search For Product  Game & Watch
+    [Documentation]  This is some basic informtation about the test
+    [Tags]  Test 2
+    Go To Web Page
+    Search For Product  Game & Watch
 
 User Can Search For A Product
-       [Documentation]  This is some basic informtation about the test
-       [Tags]  Test 3
-       Go To Web Page
-       Search For Product  NINTENDO Switch
+    [Documentation]  This is some basic informtation about the test
+    [Tags]  Test 3
+    Go To Web Page
+    Search For Product  NINTENDO Switch
+
+User Can Add Game To Varukorg
+    [Documentation]  This is some basic informtation about the test
+    [Tags]  Test 3
+    Go To Web Page
+    Search For Product  Zelda
+
 
